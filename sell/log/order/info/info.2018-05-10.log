@@ -1,0 +1,684 @@
+2018-05-10 09:00:27,912-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:02:37,297-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 12976 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:02:37,300-No active profile set, falling back to default profiles: default
+2018-05-10 09:02:37,361-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411f53a0: startup date [Thu May 10 09:02:37 CST 2018]; root of context hierarchy
+2018-05-10 09:02:38,467-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$107a842c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:02:38,694-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:02:38,704-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:02:38,712-Starting service [Tomcat]
+2018-05-10 09:02:38,712-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:02:38,716-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:02:39,179-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:02:39,179-Root WebApplicationContext: initialization completed in 1818 ms
+2018-05-10 09:02:39,295-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:02:39,298-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:02:39,299-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:02:39,299-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:02:39,299-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:02:39,408-HikariPool-1 - Starting...
+2018-05-10 09:02:39,544-HikariPool-1 - Start completed.
+2018-05-10 09:02:39,579-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:02:39,666-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:02:39,732-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:02:39,732-HHH000206: hibernate.properties not found
+2018-05-10 09:02:39,767-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:02:39,868-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:02:40,250-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:02:40,577-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:02:40,757-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411f53a0: startup date [Thu May 10 09:02:37 CST 2018]; root of context hierarchy
+2018-05-10 09:02:40,778-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:02:40,805-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:02:40,807-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:02:40,808-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:02:40,809-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:02:40,828-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:02:40,828-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:02:41,037-Registering beans for JMX exposure on startup
+2018-05-10 09:02:41,039-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:02:41,042-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:02:41,053-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:02:41,059-Pausing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:02:41,059-Stopping service [Tomcat]
+2018-05-10 09:02:41,065-The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-05-10 09:02:41,065-Stopping ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:02:41,066-Destroying ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:02:41,068-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-10 09:02:41,071-Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411f53a0: startup date [Thu May 10 09:02:37 CST 2018]; root of context hierarchy
+2018-05-10 09:02:41,073-Unregistering JMX-exposed beans on shutdown
+2018-05-10 09:02:41,073-Unregistering JMX-exposed beans
+2018-05-10 09:02:41,075-Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:02:41,075-HikariPool-1 - Shutdown initiated...
+2018-05-10 09:02:41,078-HikariPool-1 - Shutdown completed.
+2018-05-10 09:05:26,957-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 10852 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:05:26,961-No active profile set, falling back to default profiles: default
+2018-05-10 09:05:27,051-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:05:27 CST 2018]; root of context hierarchy
+2018-05-10 09:05:27,787-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71e454e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:05:27,997-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:05:28,011-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:05:28,019-Starting service [Tomcat]
+2018-05-10 09:05:28,019-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:05:28,022-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:05:28,152-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:05:28,152-Root WebApplicationContext: initialization completed in 1101 ms
+2018-05-10 09:05:28,263-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:05:28,267-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:05:28,267-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:05:28,267-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:05:28,267-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:05:28,366-HikariPool-1 - Starting...
+2018-05-10 09:05:28,503-HikariPool-1 - Start completed.
+2018-05-10 09:05:28,537-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:05:28,611-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:05:28,659-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:05:28,660-HHH000206: hibernate.properties not found
+2018-05-10 09:05:28,687-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:05:28,780-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:05:29,114-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:05:29,476-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:05:29,635-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:05:27 CST 2018]; root of context hierarchy
+2018-05-10 09:05:29,657-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:05:29,681-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:05:29,684-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:05:29,687-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:05:29,689-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:05:29,715-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:05:29,715-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:05:29,936-Registering beans for JMX exposure on startup
+2018-05-10 09:05:29,938-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:05:29,942-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:05:29,951-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:05:29,963-Using a shared selector for servlet write/read
+2018-05-10 09:05:29,974-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:05:29,976-Started OrderApplication in 3.469 seconds (JVM running for 4.107)
+2018-05-10 09:05:39,961-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:05:39,961-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:05:39,978-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:16:50,867-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 10376 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:16:50,871-No active profile set, falling back to default profiles: default
+2018-05-10 09:16:50,935-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:16:50 CST 2018]; root of context hierarchy
+2018-05-10 09:16:52,029-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$440d5b2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:16:52,290-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:16:52,302-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:16:52,309-Starting service [Tomcat]
+2018-05-10 09:16:52,309-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:16:52,312-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:16:52,428-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:16:52,428-Root WebApplicationContext: initialization completed in 1494 ms
+2018-05-10 09:16:52,557-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:16:52,560-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:16:52,560-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:16:52,560-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:16:52,560-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:16:52,674-HikariPool-1 - Starting...
+2018-05-10 09:16:52,816-HikariPool-1 - Start completed.
+2018-05-10 09:16:52,854-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:16:52,936-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:16:53,001-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:16:53,002-HHH000206: hibernate.properties not found
+2018-05-10 09:16:53,041-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:16:53,147-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:16:53,516-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:16:53,870-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:16:54,057-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:16:50 CST 2018]; root of context hierarchy
+2018-05-10 09:16:54,079-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:16:54,107-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:16:54,108-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:16:54,108-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:16:54,110-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:16:54,111-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:16:54,129-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:16:54,130-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:16:54,337-Registering beans for JMX exposure on startup
+2018-05-10 09:16:54,338-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:16:54,342-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:16:54,352-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:16:54,361-Using a shared selector for servlet write/read
+2018-05-10 09:16:54,373-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:16:54,375-Started OrderApplication in 3.92 seconds (JVM running for 4.681)
+2018-05-10 09:17:05,357-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:17:05,357-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:17:05,375-FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-10 09:18:11,822-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:23:38,916-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 12548 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:23:38,920-No active profile set, falling back to default profiles: default
+2018-05-10 09:23:39,005-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:23:39 CST 2018]; root of context hierarchy
+2018-05-10 09:23:39,789-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13135af4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:23:40,019-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:23:40,030-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:23:40,037-Starting service [Tomcat]
+2018-05-10 09:23:40,037-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:23:40,041-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:23:40,164-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:23:40,165-Root WebApplicationContext: initialization completed in 1160 ms
+2018-05-10 09:23:40,281-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:23:40,286-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:23:40,286-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:23:40,286-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:23:40,286-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:23:40,391-HikariPool-1 - Starting...
+2018-05-10 09:23:40,528-HikariPool-1 - Start completed.
+2018-05-10 09:23:40,562-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:23:40,651-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:23:40,703-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:23:40,704-HHH000206: hibernate.properties not found
+2018-05-10 09:23:40,734-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:23:40,824-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:23:41,167-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:23:41,538-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:23:41,771-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:23:39 CST 2018]; root of context hierarchy
+2018-05-10 09:23:41,794-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:23:41,823-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:23:41,824-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:23:41,824-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:23:41,826-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:23:41,827-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:23:41,851-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:23:41,852-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:23:42,087-Registering beans for JMX exposure on startup
+2018-05-10 09:23:42,089-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:23:42,092-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:23:42,103-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:23:42,112-Using a shared selector for servlet write/read
+2018-05-10 09:23:42,125-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:23:42,127-Started OrderApplication in 3.644 seconds (JVM running for 4.305)
+2018-05-10 09:23:49,616-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:23:49,616-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:23:49,633-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:23:49,672-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:24:19,974-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 11984 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:24:19,978-No active profile set, falling back to default profiles: default
+2018-05-10 09:24:20,065-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:24:20 CST 2018]; root of context hierarchy
+2018-05-10 09:24:20,905-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dc37ce0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:24:21,141-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:24:21,152-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:24:21,159-Starting service [Tomcat]
+2018-05-10 09:24:21,159-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:24:21,162-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:24:21,281-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:24:21,281-Root WebApplicationContext: initialization completed in 1216 ms
+2018-05-10 09:24:21,398-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:24:21,401-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:24:21,401-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:24:21,401-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:24:21,401-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:24:21,501-HikariPool-1 - Starting...
+2018-05-10 09:24:21,634-HikariPool-1 - Start completed.
+2018-05-10 09:24:21,668-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:24:21,752-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:24:21,801-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:24:21,802-HHH000206: hibernate.properties not found
+2018-05-10 09:24:21,830-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:24:21,924-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:24:22,253-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:24:22,593-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:24:22,772-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:24:20 CST 2018]; root of context hierarchy
+2018-05-10 09:24:22,795-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:24:22,822-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:24:22,823-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:24:22,824-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:24:22,826-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:24:22,827-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:24:22,850-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:24:22,850-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:24:23,058-Registering beans for JMX exposure on startup
+2018-05-10 09:24:23,059-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:24:23,063-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:24:23,072-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:24:23,081-Using a shared selector for servlet write/read
+2018-05-10 09:24:23,093-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:24:23,096-Started OrderApplication in 3.5 seconds (JVM running for 4.148)
+2018-05-10 09:24:25,993-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:24:25,993-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:24:26,010-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:24:26,046-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:26:26,517-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 7684 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:26:26,522-No active profile set, falling back to default profiles: default
+2018-05-10 09:26:26,598-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62379589: startup date [Thu May 10 09:26:26 CST 2018]; root of context hierarchy
+2018-05-10 09:26:27,372-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$efc0eca6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:26:27,586-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:26:27,598-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:26:27,605-Starting service [Tomcat]
+2018-05-10 09:26:27,605-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:26:27,608-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:26:27,737-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:26:27,738-Root WebApplicationContext: initialization completed in 1140 ms
+2018-05-10 09:26:27,864-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:26:27,868-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:26:27,868-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:26:27,869-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:26:27,869-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:26:27,967-HikariPool-1 - Starting...
+2018-05-10 09:26:28,100-HikariPool-1 - Start completed.
+2018-05-10 09:26:28,136-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:26:28,214-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:26:28,266-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:26:28,266-HHH000206: hibernate.properties not found
+2018-05-10 09:26:28,293-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:26:28,384-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:26:28,711-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:26:29,054-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:26:29,246-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62379589: startup date [Thu May 10 09:26:26 CST 2018]; root of context hierarchy
+2018-05-10 09:26:29,273-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:26:29,298-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:26:29,299-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:26:29,300-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:26:29,302-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:26:29,303-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:26:29,324-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:26:29,324-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:26:29,591-Registering beans for JMX exposure on startup
+2018-05-10 09:26:29,593-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:26:29,598-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:26:29,611-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:26:29,623-Using a shared selector for servlet write/read
+2018-05-10 09:26:29,635-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:26:29,637-Started OrderApplication in 3.51 seconds (JVM running for 4.142)
+2018-05-10 09:26:35,076-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:26:35,077-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:26:35,093-FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-05-10 09:26:35,129-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:27:33,922-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 7876 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:27:33,926-No active profile set, falling back to default profiles: default
+2018-05-10 09:27:33,994-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:27:33 CST 2018]; root of context hierarchy
+2018-05-10 09:27:34,697-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c409b983] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:27:34,903-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:27:34,913-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:27:34,920-Starting service [Tomcat]
+2018-05-10 09:27:34,920-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:27:34,923-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:27:35,059-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:27:35,059-Root WebApplicationContext: initialization completed in 1065 ms
+2018-05-10 09:27:35,174-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:27:35,179-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:27:35,184-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:27:35,184-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:27:35,184-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:27:35,289-HikariPool-1 - Starting...
+2018-05-10 09:27:35,422-HikariPool-1 - Start completed.
+2018-05-10 09:27:35,456-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:27:35,532-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:27:35,583-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:27:35,583-HHH000206: hibernate.properties not found
+2018-05-10 09:27:35,612-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:27:35,702-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:27:36,022-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:27:36,345-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:27:36,521-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:27:33 CST 2018]; root of context hierarchy
+2018-05-10 09:27:36,542-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:27:36,568-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:27:36,568-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:27:36,569-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:27:36,570-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:27:36,571-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:27:36,589-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:27:36,589-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:27:36,787-Registering beans for JMX exposure on startup
+2018-05-10 09:27:36,788-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:27:36,793-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:27:36,803-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:27:36,815-Using a shared selector for servlet write/read
+2018-05-10 09:27:36,829-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:27:36,831-Started OrderApplication in 3.324 seconds (JVM running for 4.004)
+2018-05-10 09:27:39,654-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:27:39,654-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:27:39,675-FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-05-10 09:27:39,720-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:28:17,019-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 18148 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:28:17,022-No active profile set, falling back to default profiles: default
+2018-05-10 09:28:17,103-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:28:17 CST 2018]; root of context hierarchy
+2018-05-10 09:28:17,831-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31a4922e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:28:18,054-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:28:18,065-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:28:18,072-Starting service [Tomcat]
+2018-05-10 09:28:18,072-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:28:18,075-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:28:18,198-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:28:18,198-Root WebApplicationContext: initialization completed in 1095 ms
+2018-05-10 09:28:18,337-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:28:18,340-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:28:18,340-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:28:18,340-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:28:18,340-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:28:18,448-HikariPool-1 - Starting...
+2018-05-10 09:28:18,584-HikariPool-1 - Start completed.
+2018-05-10 09:28:18,622-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:28:18,704-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:28:18,757-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:28:18,758-HHH000206: hibernate.properties not found
+2018-05-10 09:28:18,789-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:28:18,886-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:28:19,238-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:28:19,618-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:28:19,801-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:28:17 CST 2018]; root of context hierarchy
+2018-05-10 09:28:19,827-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:28:19,874-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:28:19,875-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:28:19,876-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:28:19,880-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:28:19,880-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:28:19,913-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:28:19,913-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:28:20,231-Registering beans for JMX exposure on startup
+2018-05-10 09:28:20,233-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:28:20,237-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:28:20,247-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:28:20,257-Using a shared selector for servlet write/read
+2018-05-10 09:28:20,270-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:28:20,272-Started OrderApplication in 3.634 seconds (JVM running for 4.279)
+2018-05-10 09:28:22,319-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:28:22,319-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:28:22,337-FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-10 09:28:22,376-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:30:45,858-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 17768 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:30:45,864-No active profile set, falling back to default profiles: default
+2018-05-10 09:30:45,950-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:30:45 CST 2018]; root of context hierarchy
+2018-05-10 09:30:46,687-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d1e7b8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:30:46,933-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:30:46,944-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:30:46,953-Starting service [Tomcat]
+2018-05-10 09:30:46,953-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:30:46,957-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:30:47,076-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:30:47,076-Root WebApplicationContext: initialization completed in 1127 ms
+2018-05-10 09:30:47,186-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:30:47,190-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:30:47,190-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:30:47,190-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:30:47,190-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:30:47,295-HikariPool-1 - Starting...
+2018-05-10 09:30:47,428-HikariPool-1 - Start completed.
+2018-05-10 09:30:47,460-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:30:47,541-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:30:47,588-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:30:47,589-HHH000206: hibernate.properties not found
+2018-05-10 09:30:47,617-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:30:47,711-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:30:48,043-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:30:48,394-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:30:48,560-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13c9d689: startup date [Thu May 10 09:30:45 CST 2018]; root of context hierarchy
+2018-05-10 09:30:48,580-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:30:48,607-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:30:48,608-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:30:48,609-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:30:48,611-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:30:48,611-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:30:48,632-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:30:48,632-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:30:48,837-Registering beans for JMX exposure on startup
+2018-05-10 09:30:48,839-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:30:48,842-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:30:48,852-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:30:48,862-Using a shared selector for servlet write/read
+2018-05-10 09:30:48,876-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:30:48,879-Started OrderApplication in 3.421 seconds (JVM running for 4.069)
+2018-05-10 09:30:59,930-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:30:59,930-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:30:59,949-FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-05-10 09:30:59,988-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:35:11,570-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 12520 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:35:11,574-No active profile set, falling back to default profiles: default
+2018-05-10 09:35:11,671-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:35:11 CST 2018]; root of context hierarchy
+2018-05-10 09:35:12,590-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96fd6ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:35:12,836-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:35:12,847-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:35:12,854-Starting service [Tomcat]
+2018-05-10 09:35:12,855-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:35:12,858-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:35:12,978-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:35:12,979-Root WebApplicationContext: initialization completed in 1307 ms
+2018-05-10 09:35:13,096-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:35:13,100-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:35:13,100-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:35:13,100-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:35:13,100-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:35:13,214-HikariPool-1 - Starting...
+2018-05-10 09:35:13,355-HikariPool-1 - Start completed.
+2018-05-10 09:35:13,391-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:35:13,477-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:35:13,534-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:35:13,534-HHH000206: hibernate.properties not found
+2018-05-10 09:35:13,565-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:35:13,662-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:35:14,022-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:35:14,390-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:35:14,583-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:35:11 CST 2018]; root of context hierarchy
+2018-05-10 09:35:14,605-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:35:14,631-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:35:14,632-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:35:14,632-Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<com.imooc.order.dto.OrderDTO> com.imooc.order.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-05-10 09:35:14,633-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:35:14,635-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:35:14,635-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:35:14,657-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:35:14,657-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:35:14,862-Registering beans for JMX exposure on startup
+2018-05-10 09:35:14,863-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:35:14,867-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:35:14,876-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:35:14,887-Using a shared selector for servlet write/read
+2018-05-10 09:35:14,900-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:35:14,902-Started OrderApplication in 3.765 seconds (JVM running for 4.499)
+2018-05-10 09:36:03,686-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:36:03,687-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:36:03,705-FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-10 09:36:20,375-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 10192 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:36:20,379-No active profile set, falling back to default profiles: default
+2018-05-10 09:36:20,469-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:36:20 CST 2018]; root of context hierarchy
+2018-05-10 09:36:21,270-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e843c7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:36:21,480-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:36:21,492-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:36:21,498-Starting service [Tomcat]
+2018-05-10 09:36:21,499-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:36:21,502-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:36:21,622-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:36:21,623-Root WebApplicationContext: initialization completed in 1153 ms
+2018-05-10 09:36:21,734-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:36:21,738-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:36:21,738-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:36:21,738-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:36:21,738-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:36:21,840-HikariPool-1 - Starting...
+2018-05-10 09:36:21,975-HikariPool-1 - Start completed.
+2018-05-10 09:36:22,007-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:36:22,085-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:36:22,134-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:36:22,135-HHH000206: hibernate.properties not found
+2018-05-10 09:36:22,166-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:36:22,258-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:36:22,603-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:36:22,958-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:36:23,164-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:36:20 CST 2018]; root of context hierarchy
+2018-05-10 09:36:23,185-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:36:23,210-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:36:23,210-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:36:23,211-Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<com.imooc.order.dto.OrderDTO> com.imooc.order.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-05-10 09:36:23,211-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:36:23,213-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:36:23,213-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:36:23,233-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:36:23,233-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:36:23,439-Registering beans for JMX exposure on startup
+2018-05-10 09:36:23,441-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:36:23,445-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:36:23,454-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:36:23,464-Using a shared selector for servlet write/read
+2018-05-10 09:36:23,476-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:36:23,478-Started OrderApplication in 3.558 seconds (JVM running for 4.241)
+2018-05-10 09:36:26,365-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:36:26,365-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:36:26,382-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:36:26,464-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:38:47,393-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 14068 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:38:47,397-No active profile set, falling back to default profiles: default
+2018-05-10 09:38:47,454-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:38:47 CST 2018]; root of context hierarchy
+2018-05-10 09:38:48,315-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$504b6e8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:38:48,566-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:38:48,577-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:38:48,585-Starting service [Tomcat]
+2018-05-10 09:38:48,585-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:38:48,589-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:38:48,694-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:38:48,694-Root WebApplicationContext: initialization completed in 1240 ms
+2018-05-10 09:38:48,811-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:38:48,815-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:38:48,815-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:38:48,815-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:38:48,815-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:38:48,926-HikariPool-1 - Starting...
+2018-05-10 09:38:49,070-HikariPool-1 - Start completed.
+2018-05-10 09:38:49,106-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:38:49,115-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:38:49,225-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:38:49,226-HHH000206: hibernate.properties not found
+2018-05-10 09:38:49,255-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:38:49,350-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:38:49,694-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:38:50,034-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:38:50,247-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@175c2241: startup date [Thu May 10 09:38:47 CST 2018]; root of context hierarchy
+2018-05-10 09:38:50,282-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:38:50,332-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:38:50,333-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:38:50,333-Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-05-10 09:38:50,334-Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<com.imooc.order.dto.OrderDTO> com.imooc.order.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-05-10 09:38:50,334-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:38:50,336-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:38:50,337-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:38:50,363-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:38:50,363-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:38:50,594-Registering beans for JMX exposure on startup
+2018-05-10 09:38:50,594-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:38:50,598-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:38:50,608-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:38:50,618-Using a shared selector for servlet write/read
+2018-05-10 09:38:50,631-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:38:50,633-Started OrderApplication in 3.661 seconds (JVM running for 4.328)
+2018-05-10 09:39:10,688-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:39:10,689-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:39:10,709-FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-05-10 09:39:15,636-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:40:22,519-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 14528 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:40:22,523-No active profile set, falling back to default profiles: default
+2018-05-10 09:40:22,598-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:40:22 CST 2018]; root of context hierarchy
+2018-05-10 09:40:23,299-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5fe75a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:40:23,502-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:40:23,512-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:40:23,520-Starting service [Tomcat]
+2018-05-10 09:40:23,520-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:40:23,523-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:40:23,640-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:40:23,640-Root WebApplicationContext: initialization completed in 1042 ms
+2018-05-10 09:40:23,746-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:40:23,750-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:40:23,750-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:40:23,750-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:40:23,751-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:40:23,847-HikariPool-1 - Starting...
+2018-05-10 09:40:23,975-HikariPool-1 - Start completed.
+2018-05-10 09:40:24,009-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:40:24,089-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:40:24,138-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:40:24,139-HHH000206: hibernate.properties not found
+2018-05-10 09:40:24,171-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:40:24,258-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:40:24,577-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:40:24,903-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:40:25,073-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d296da: startup date [Thu May 10 09:40:22 CST 2018]; root of context hierarchy
+2018-05-10 09:40:25,103-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:40:25,134-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:40:25,135-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:40:25,136-Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<com.imooc.order.dto.OrderDTO> com.imooc.order.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-05-10 09:40:25,136-Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-05-10 09:40:25,136-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:40:25,138-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:40:25,139-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:40:25,161-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:40:25,162-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:40:25,373-Registering beans for JMX exposure on startup
+2018-05-10 09:40:25,374-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:40:25,378-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:40:25,387-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:40:25,398-Using a shared selector for servlet write/read
+2018-05-10 09:40:25,411-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:40:25,413-Started OrderApplication in 3.269 seconds (JVM running for 3.922)
+2018-05-10 09:40:39,225-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:40:39,225-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:40:39,242-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:40:39,317-HHH000397: Using ASTQueryTranslatorFactory
+2018-05-10 09:53:21,046-Starting OrderApplication on DESKTOP-FIRK9G1 with PID 14248 (D:\Workspace\order_system\sell\target\classes started by Patrick in D:\Workspace\order_system\sell)
+2018-05-10 09:53:21,050-No active profile set, falling back to default profiles: default
+2018-05-10 09:53:21,129-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b7a5baa: startup date [Thu May 10 09:53:21 CST 2018]; root of context hierarchy
+2018-05-10 09:53:21,889-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$615b96d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-10 09:53:22,104-Tomcat initialized with port(s): 8080 (http)
+2018-05-10 09:53:22,115-Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:53:22,121-Starting service [Tomcat]
+2018-05-10 09:53:22,122-Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-10 09:53:22,126-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Development\Python\Python 2.7;D:\Development\Python\Python 2.7\Scripts;D:\Development\Python\Python 3.5;D:\Development\Python\Python 3.5\Scripts;D:\Development\Python\Python 3.6;D:\Development\Python\Python 3.6\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\texlive\2017\bin\win32;D:\Development\OpenCV\3.3.0\build\x64\vc14\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\MySQL\bin;D:\Development\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\texlive\2017\bin\win32;C:\Users\Patrick\AppData\Roaming\npm;.]
+2018-05-10 09:53:22,242-Initializing Spring embedded WebApplicationContext
+2018-05-10 09:53:22,242-Root WebApplicationContext: initialization completed in 1113 ms
+2018-05-10 09:53:22,350-Servlet dispatcherServlet mapped to [/]
+2018-05-10 09:53:22,353-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-10 09:53:22,353-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-10 09:53:22,353-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-10 09:53:22,354-Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-10 09:53:22,472-HikariPool-1 - Starting...
+2018-05-10 09:53:22,607-HikariPool-1 - Start completed.
+2018-05-10 09:53:22,640-Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:53:22,711-HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-10 09:53:22,760-HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-10 09:53:22,760-HHH000206: hibernate.properties not found
+2018-05-10 09:53:22,788-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-10 09:53:22,877-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-10 09:53:23,202-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-10 09:53:23,528-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:53:23,702-Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b7a5baa: startup date [Thu May 10 09:53:21 CST 2018]; root of context hierarchy
+2018-05-10 09:53:23,723-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-10 09:53:23,749-Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.order.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.order.controller.BuyerOrderController.create(com.imooc.order.form.OrderForm,org.springframework.validation.BindingResult)
+2018-05-10 09:53:23,750-Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<java.util.List<com.imooc.order.dto.OrderDTO>> com.imooc.order.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-05-10 09:53:23,750-Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.order.vo.ResultVO<com.imooc.order.dto.OrderDTO> com.imooc.order.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2018-05-10 09:53:23,750-Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2018-05-10 09:53:23,751-Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.order.vo.ResultVO com.imooc.order.controller.BuyerProductController.list()
+2018-05-10 09:53:23,752-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-10 09:53:23,753-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-10 09:53:23,772-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:53:23,772-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-10 09:53:23,964-Registering beans for JMX exposure on startup
+2018-05-10 09:53:23,965-Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-10 09:53:23,968-Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-10 09:53:23,977-Starting ProtocolHandler ["http-nio-8080"]
+2018-05-10 09:53:23,987-Using a shared selector for servlet write/read
+2018-05-10 09:53:23,999-Tomcat started on port(s): 8080 (http) with context path '/sell'
+2018-05-10 09:53:24,001-Started OrderApplication in 3.38 seconds (JVM running for 4.044)
+2018-05-10 09:53:30,503-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-10 09:53:30,504-FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-10 09:53:30,521-FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-10 09:53:30,593-HHH000397: Using ASTQueryTranslatorFactory

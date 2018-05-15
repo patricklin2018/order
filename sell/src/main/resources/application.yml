@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://219.228.60.120/db_order?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+server:
+  servlet:
+    context-path: /sell
+
+# 采用 logback-spring.xml 配置以下
+#logging:
+#  pattern:
+#    console:  "%d - %msg%n"
+#  file: ./log/order.log
+#  level:
+#    com.imooc.LoggerTets: debug
+
+wechat:
+  mpAppId: wxac5292c613f706bb
+  mpAppSecret: fab7c3bd9ec8d3be7c5e2a5bf38709e8
+
