@@ -28,7 +28,7 @@ public class WechatPayConfig {
     public WxPayH5Config wxPayH5Config() {
         WxPayH5Config wxPayH5Config = new WxPayH5Config();
         wxPayH5Config.setAppId(accountConfig.getTmpMpAppId());
-        wxPayH5Config.setAppSecret(accountConfig.getTmpMpAppSerect());
+        // wxPayH5Config.setAppSecret(accountConfig.getTmpMpAppSerect());
         wxPayH5Config.setMchId(accountConfig.getMchId());
         wxPayH5Config.setMchKey(accountConfig.getMchKey());
         wxPayH5Config.setKeyPath(accountConfig.getKeyPath());

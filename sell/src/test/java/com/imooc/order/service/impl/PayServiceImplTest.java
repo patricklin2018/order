@@ -3,6 +3,7 @@ package com.imooc.order.service.impl;
 import com.imooc.order.dto.OrderDTO;
 import com.imooc.order.service.OrderService;
 import com.imooc.order.service.PayService;
+import com.imooc.order.utils.JsonUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,13 @@ public class PayServiceImplTest {
 
     @Test
     public void create() {
-        OrderDTO orderDTO = orderService.findOne("1525878981174343509");
+        OrderDTO orderDTO = orderService.findOne("1525914340077975060");
         payService.create(orderDTO);
+    }
+
+    @Test
+    public void refund() {
+        OrderDTO orderDTO = orderService.findOne("1525914340077975060");
+        payService.refund(orderDTO);
     }
 }
