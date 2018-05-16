@@ -29,7 +29,7 @@ public class WechatController {
 
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl) {
-        String url = "http://www.ki62wb.natappfree.cc/sell/wechat/userInfo";
+        String url = "http://www.patrick.nat100.top/sell/wechat/userInfo";
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, URLEncoder.encode(returnUrl));
 
         return "redirect:" + redirectUrl;

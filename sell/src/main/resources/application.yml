@@ -23,4 +23,11 @@ server:
 wechat:
   mpAppId: wxac5292c613f706bb
   mpAppSecret: fab7c3bd9ec8d3be7c5e2a5bf38709e8
+  tmpMpAppId: wxd898fcb01713c658
+  tmpMpAppSecret: 29d8a650db31472aa87800e3b0d739f2
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://patrick.nat100.top/sell/pay/notify
+
 
