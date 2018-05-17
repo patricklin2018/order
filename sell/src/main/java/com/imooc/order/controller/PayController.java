@@ -6,6 +6,7 @@ import com.imooc.order.exception.SellException;
 import com.imooc.order.service.OrderService;
 import com.imooc.order.service.PayService;
 import com.lly835.bestpay.model.PayResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,8 @@ import java.util.Map;
  */
 
 @Controller
-@RequestMapping("/pay")
+//@RequestMapping("/pay")
+@Slf4j
 public class PayController {
 
     @Autowired
@@ -27,6 +29,29 @@ public class PayController {
 
     @Autowired
     private PayService payServicel;
+
+    /*
+        借用支付账号联调
+    */
+    @GetMapping("/pay")
+    public ModelAndView index(@RequestParam("openid") String openid,
+                        Map<String, Object> map) {
+        log.info("openid = {}", openid);
+
+        // 1. 查询订单
+        String orderId = "1526530935071913573";
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        if (orderDTO == null) {
+            throw new SellException(ResultEnum.ORDERMASTER_NOT_EXIST);
+        }
+
+        // 发起支付
+        orderDTO.setBuyerOpenid(openid);
+        PayResponse payResponse = payServicel.create(orderDTO);
+        map.put("payResponse", payResponse);
+        map.put("returnUrl", "http://www.baidu.com");
+        return new ModelAndView("pay/create", map);
+    }
 
     @GetMapping("/create")
     public ModelAndView create(@RequestParam("orderId") String orderId,

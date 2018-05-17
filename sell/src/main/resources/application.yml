@@ -8,9 +8,9 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
-server:
-  servlet:
-    context-path: /sell
+#server:
+#  servlet:
+#    context-path: /sell
 
 # 采用 logback-spring.xml 配置以下
 #logging:

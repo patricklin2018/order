@@ -14,7 +14,7 @@
                     /*if(res.err_msg == "get_brand_wcpay_request:ok" ) {
 
                     }*/
-                    location.href = "$(returnUrl)";
+                    location.href = "${returnUrl}";
                 }
         );
     }
